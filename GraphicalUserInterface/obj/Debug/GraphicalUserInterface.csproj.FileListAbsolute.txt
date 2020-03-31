@@ -1,0 +1,14 @@
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\bin\Debug\GraphicalUserInterface.exe.config
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\bin\Debug\GraphicalUserInterface.exe
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\bin\Debug\GraphicalUserInterface.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.csprojAssemblyReference.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.Form1.resources
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.Properties.Resources.resources
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.csproj.GenerateResource.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.exe
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\bin\Debug\Interop.WMPLib.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\Interop.WMPLib.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\GraphicalUserInterface\obj\Debug\GraphicalUserInterface.csproj.ResolveComReference.cache

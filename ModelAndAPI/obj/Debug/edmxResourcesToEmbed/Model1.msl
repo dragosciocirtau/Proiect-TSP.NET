@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="Pictures">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Picture)">
+        <MappingFragment StoreEntitySet="Pictures">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="creation_date" ColumnName="creation_date" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="persons" ColumnName="persons" />
+          <ScalarProperty Name="event" ColumnName="event" />
+          <ScalarProperty Name="other_details" ColumnName="other_details" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Location)">
+        <MappingFragment StoreEntitySet="Locations">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Person)">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Event)">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PictureEvent" TypeName="Model1.PictureEvent" StoreEntitySet="Pictures">
+      <EndProperty Name="Event">
+        <ScalarProperty Name="Id" ColumnName="Event_Id" />
+      </EndProperty>
+      <EndProperty Name="Picture">
+        <ScalarProperty Name="name" ColumnName="name" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PicturePerson" TypeName="Model1.PicturePerson" StoreEntitySet="PicturePerson">
+      <EndProperty Name="Picture">
+        <ScalarProperty Name="name" ColumnName="Pictures_name" />
+      </EndProperty>
+      <EndProperty Name="Person">
+        <ScalarProperty Name="name" ColumnName="People_name" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PictureLocation" TypeName="Model1.PictureLocation" StoreEntitySet="Pictures">
+      <EndProperty Name="Location">
+        <ScalarProperty Name="name" ColumnName="Location_name" />
+      </EndProperty>
+      <EndProperty Name="Picture">
+        <ScalarProperty Name="name" ColumnName="name" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

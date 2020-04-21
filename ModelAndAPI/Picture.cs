@@ -20,7 +20,7 @@ namespace ModelAndAPI
             this.People = new HashSet<Person>();
         }
     
-        public int Id { get; set; }
+        public int name { get; set; }
         public string type { get; set; }
         public string path { get; set; }
         public string creation_date { get; set; }

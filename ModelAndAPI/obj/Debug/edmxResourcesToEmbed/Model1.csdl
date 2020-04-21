@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Pictures" EntityType="Model1.Picture" />
+    <EntitySet Name="Locations" EntityType="Model1.Location" />
+    <EntitySet Name="People" EntityType="Model1.Person" />
+    <EntitySet Name="Events" EntityType="Model1.Event" />
+    <AssociationSet Name="PictureEvent" Association="Model1.PictureEvent">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="PicturePerson" Association="Model1.PicturePerson">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="Person" EntitySet="People" />
+    </AssociationSet>
+    <AssociationSet Name="PictureLocation" Association="Model1.PictureLocation">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="Location" EntitySet="Locations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Picture">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" Nullable="false" />
+    <Property Name="path" Type="String" Nullable="false" />
+    <Property Name="creation_date" Type="String" Nullable="false" />
+    <Property Name="location" Type="String" Nullable="false" />
+    <Property Name="persons" Type="String" Nullable="false" />
+    <Property Name="event" Type="String" Nullable="false" />
+    <Property Name="other_details" Type="String" Nullable="false" />
+    <NavigationProperty Name="Event" Relationship="Model1.PictureEvent" FromRole="Picture" ToRole="Event" />
+    <NavigationProperty Name="People" Relationship="Model1.PicturePerson" FromRole="Picture" ToRole="Person" />
+    <NavigationProperty Name="Location" Relationship="Model1.PictureLocation" FromRole="Picture" ToRole="Location" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Pictures" Relationship="Model1.PictureLocation" FromRole="Location" ToRole="Picture" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <NavigationProperty Name="Pictures" Relationship="Model1.PicturePerson" FromRole="Person" ToRole="Picture" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Pictures" Relationship="Model1.PictureEvent" FromRole="Event" ToRole="Picture" />
+  </EntityType>
+  <Association Name="PictureEvent">
+    <End Type="Model1.Picture" Role="Picture" Multiplicity="*" />
+    <End Type="Model1.Event" Role="Event" Multiplicity="1" />
+  </Association>
+  <Association Name="PicturePerson">
+    <End Type="Model1.Picture" Role="Picture" Multiplicity="*" />
+    <End Type="Model1.Person" Role="Person" Multiplicity="*" />
+  </Association>
+  <Association Name="PictureLocation">
+    <End Type="Model1.Picture" Role="Picture" Multiplicity="*" />
+    <End Type="Model1.Location" Role="Location" Multiplicity="1" />
+  </Association>
+</Schema>

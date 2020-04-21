@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="Pictures" EntityType="Model1.Store.Pictures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="Model1.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="People" EntityType="Model1.Store.People" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Events" EntityType="Model1.Store.Events" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PicturePerson" EntityType="Model1.Store.PicturePerson" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="PictureEvent" Association="Model1.Store.PictureEvent">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="Event" EntitySet="Events" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PicturePerson_Picture" Association="Model1.Store.FK_PicturePerson_Picture">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="PicturePerson" EntitySet="PicturePerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PicturePerson_Person" Association="Model1.Store.FK_PicturePerson_Person">
+      <End Role="Person" EntitySet="People" />
+      <End Role="PicturePerson" EntitySet="PicturePerson" />
+    </AssociationSet>
+    <AssociationSet Name="PictureLocation" Association="Model1.Store.PictureLocation">
+      <End Role="Picture" EntitySet="Pictures" />
+      <End Role="Location" EntitySet="Locations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Pictures">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="creation_date" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="persons" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="event" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="other_details" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Event_Id" Type="int" Nullable="false" />
+    <Property Name="Location_name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar(max)" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PicturePerson">
+    <Key>
+      <PropertyRef Name="Pictures_name" />
+      <PropertyRef Name="People_name" />
+    </Key>
+    <Property Name="Pictures_name" Type="int" Nullable="false" />
+    <Property Name="People_name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="PictureEvent">
+    <End Role="Picture" Type="Model1.Store.Pictures" Multiplicity="*" />
+    <End Role="Event" Type="Model1.Store.Events" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Picture">
+        <PropertyRef Name="Event_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PictureLocation">
+    <End Role="Picture" Type="Model1.Store.Pictures" Multiplicity="*" />
+    <End Role="Location" Type="Model1.Store.Locations" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="name" />
+      </Principal>
+      <Dependent Role="Picture">
+        <PropertyRef Name="Location_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PicturePerson_Picture">
+    <End Role="Picture" Type="Model1.Store.Pictures" Multiplicity="1" />
+    <End Role="PicturePerson" Type="Model1.Store.PicturePerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Picture">
+        <PropertyRef Name="name" />
+      </Principal>
+      <Dependent Role="PicturePerson">
+        <PropertyRef Name="Pictures_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PicturePerson_Person">
+    <End Role="PicturePerson" Type="Model1.Store.PicturePerson" Multiplicity="*" />
+    <End Role="Person" Type="Model1.Store.People" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="name" />
+      </Principal>
+      <Dependent Role="PicturePerson">
+        <PropertyRef Name="People_name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

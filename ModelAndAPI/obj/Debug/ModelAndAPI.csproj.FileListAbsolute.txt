@@ -1,0 +1,12 @@
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\ModelAndAPI.dll.config
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\ModelAndAPI.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\ModelAndAPI.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\EntityFramework.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\EntityFramework.xml
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\obj\Debug\ModelAndAPI.csprojAssemblyReference.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\obj\Debug\ModelAndAPI.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\obj\Debug\ModelAndAPI.csproj.CopyComplete
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\obj\Debug\ModelAndAPI.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ModelAndAPI\obj\Debug\ModelAndAPI.pdb

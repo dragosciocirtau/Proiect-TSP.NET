@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelAndAPI", "ModelAndAPI.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicalUserInterface", "..\GraphicalUserInterface\GraphicalUserInterface.csproj", "{30594728-B182-45B2-AB8E-3A66F79ADB31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectWCF", "..\ObjectWCF\ObjectWCF.csproj", "{D865E130-319F-4EAA-95E0-E694C5FEAB29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{30594728-B182-45B2-AB8E-3A66F79ADB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30594728-B182-45B2-AB8E-3A66F79ADB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30594728-B182-45B2-AB8E-3A66F79ADB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D865E130-319F-4EAA-95E0-E694C5FEAB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D865E130-319F-4EAA-95E0-E694C5FEAB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D865E130-319F-4EAA-95E0-E694C5FEAB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D865E130-319F-4EAA-95E0-E694C5FEAB29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

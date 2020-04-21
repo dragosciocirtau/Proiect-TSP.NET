@@ -1,0 +1,15 @@
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\Host.exe.config
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\Host.exe
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\Host.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\ObjectWCF.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\ModelAndAPI.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\ObjectWCF.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\ModelAndAPI.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\ModelAndAPI.dll.config
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\obj\Debug\Host.exe
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\obj\Debug\Host.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\EntityFramework.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\Host\bin\Debug\EntityFramework.xml

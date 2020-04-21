@@ -1,0 +1,12 @@
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\ModelAndAPI.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\ModelAndAPI.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\ModelAndAPI.dll.config
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.pdb
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\Dragos\source\repos\NET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.xml

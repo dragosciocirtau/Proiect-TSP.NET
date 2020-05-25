@@ -18,7 +18,8 @@ namespace ModelAndAPI
                 if (items != null) {
                     for (int i = 0; i < items.Count(); i++)
                     {
-                        lp.Add(items.ElementAt(i));
+                        //lp.OrderBy(picture => picture.name);
+                        lp.Add(items.OrderBy(picture => picture.name).Skip(i).First());
                     }
                 }
 

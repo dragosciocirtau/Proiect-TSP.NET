@@ -6,3 +6,44 @@
 
 <h1>Index</h1>
 
+<form>
+    <p>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+        <a>@Html.DisplayFor(model => model.resultCount) results found</a>
+    </p>
+</form>
+
+<table class ="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].name)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].type)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].path)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].creation_date)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].location)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].persons)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].@event)</th>
+            <th>@Html.DisplayNameFor(model => model.Pictures[0].other_details)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pictures){
+            <tr style="font-size:small">
+                <td>@Html.DisplayFor(modelItem => item.name)</td>
+                <td>@Html.DisplayFor(modelItem => item.type)</td>
+                <td>@Html.DisplayFor(modelItem => item.path)</td>
+                <td>@Html.DisplayFor(modelItem => item.creation_date)</td>
+                <td>@Html.DisplayFor(modelItem => item.location)</td>
+                <td>@Html.DisplayFor(modelItem => item.persons)</td>
+                <td>@Html.DisplayFor(modelItem => item.@event)</td>
+                <td>@Html.DisplayFor(modelItem => item.other_details)</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.name">Edit</a>|
+                    <a asp-page="/Comments/List" asp-route-id="@item.name"> Details </a>|
+                    <a asp-page="./Delete" asp-route-id="@item.name"> Delete </a>|
+                </td>
+            </tr>
+        }
+</tbody></table>
